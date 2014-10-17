@@ -4,11 +4,10 @@ class Post < ActiveRecord::Migration
       t.string :title
       t.string :content
       t.integer :user_id
-     puts 'ran up method'
+
     end
     def down
-    	drop_table :posts
-    	puts 'ran down method'
+    	drop_table :posts   
     end
   end
 end
