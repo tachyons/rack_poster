@@ -1,4 +1,5 @@
 require 'bcrypt'
+require 'bundler'
 use Rack::Session::Cookie , :secret => 'change_me'
 
 use Rack::CommonLogger
